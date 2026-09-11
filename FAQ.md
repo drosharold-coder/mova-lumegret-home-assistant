@@ -24,6 +24,12 @@ In the tested MOVAhome setup, the B4000 functions as an expansion battery for th
 
 The current public release was tested with both the A4000 and Smart Meter P1 in the same account. The integration currently expects that tested setup.
 
+## Can MOVA be used together with a home battery from another brand?
+
+Yes, both systems can be present in the same Home Assistant energy setup and Home Assistant can combine their telemetry in one monitoring layer. If suitable writable integrations or vendor APIs exist for the batteries, a separate EMS can also coordinate them.
+
+This does **not** mean MOVA officially supports or directly pairs with a specific third-party battery brand. The public MOVA integration in this repository remains read-only and does not perform cross-brand charge/discharge control. See `docs/MULTI_BATTERY.md` for the architecture and validation checklist.
+
 ## How often is data updated?
 
 The current integration polls the cloud every 10 seconds.
