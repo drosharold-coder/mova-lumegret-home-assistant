@@ -1,0 +1,26 @@
+name: Feature request
+description: Suggest an improvement to the public read-only integration
+title: "[Feature]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: I understand the current public repository is intentionally read-only and experimental battery write/control code is out of scope.
+          required: true
