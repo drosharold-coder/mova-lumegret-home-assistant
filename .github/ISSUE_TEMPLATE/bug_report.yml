@@ -1,0 +1,77 @@
+name: Bug report
+description: Report a problem with the MOVA LumeGret Home Assistant integration
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not include passwords, access/refresh tokens, cookies, home addresses, private IP addresses or personal device identifiers.
+
+  - type: input
+    id: ha_version
+    attributes:
+      label: Home Assistant version
+      placeholder: "e.g. 2026.x.x"
+    validations:
+      required: true
+
+  - type: input
+    id: integration_version
+    attributes:
+      label: Integration version
+      placeholder: "e.g. 0.1.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: MOVA hardware
+      options:
+        - LumeGret A4000 + Smart Meter P1
+        - LumeGret A4000
+        - Smart Meter P1
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: movahome
+    attributes:
+      label: Does the official MOVAhome app currently show live data?
+      options:
+        - "Yes"
+        - "No"
+        - "Not checked"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized Home Assistant logs
+      description: Remove credentials, tokens, cookies, addresses and unique device IDs before posting.
+      render: text
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed credentials, tokens, cookies, addresses, private IPs and personal device identifiers from this report.
+          required: true
