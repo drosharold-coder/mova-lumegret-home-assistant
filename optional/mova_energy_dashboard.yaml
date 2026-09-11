@@ -1,0 +1,22 @@
+# Optioneel: cumulatieve kWh-sensoren voor het Home Assistant Energy Dashboard.
+# Dit bestand is bedoeld als package. Packages moeten dus geactiveerd zijn.
+#
+# Controleer eerst of de twee bron-entiteiten bij jou exact zo heten.
+# Home Assistant kan entity_id's anders noemen als je ze eerder hebt aangepast.
+
+sensor:
+  - platform: integration
+    source: sensor.mova_lumegret_a4000_batterij_laden
+    name: MOVA geladen energie totaal
+    unique_id: mova_geladen_energie_totaal
+    unit_prefix: k
+    round: 3
+    method: left
+
+  - platform: integration
+    source: sensor.mova_lumegret_a4000_batterij_ontladen
+    name: MOVA ontladen energie totaal
+    unique_id: mova_ontladen_energie_totaal
+    unit_prefix: k
+    round: 3
+    method: left
