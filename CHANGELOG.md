@@ -7,6 +7,8 @@
 - Added supported-device documentation, FAQ and troubleshooting guide.
 - Added architecture documentation with a visual Mermaid data-flow diagram.
 - Added dashboard / Energy Dashboard guidance.
+- Added English and Dutch documentation for multi-brand home-battery setups through Home Assistant, including conflict-avoidance rules and a validation checklist.
+- Clarified that multi-brand coordination is a Home Assistant / EMS architecture pattern, not an official MOVA-to-third-party compatibility claim.
 - Added a real-device test matrix and release checklist.
 - Added roadmap and contributing guidelines.
 - Added structured GitHub issue forms for bugs, feature requests and device-support requests.
