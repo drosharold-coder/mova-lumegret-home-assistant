@@ -4,6 +4,20 @@ Unofficial **read-only** Home Assistant custom integration for the MOVA LumeGret
 
 > This is a community project. It is not an official MOVA or Home Assistant integration. Cloud or firmware changes may require updates to this project.
 
+## Documentation
+
+- [Detailed installation guide](docs/INSTALLATION.md)
+- [Nederlandse installatiehandleiding](docs/INSTALLATION_NL.md)
+- [Supported devices](SUPPORTED_DEVICES.md)
+- [Troubleshooting](TROUBLESHOOTING.md)
+- [FAQ](FAQ.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Dashboard / Energy Dashboard](docs/DASHBOARD.md)
+- [Test matrix & release checklist](docs/TEST_MATRIX.md)
+- [Roadmap](ROADMAP.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security](SECURITY.md)
+
 ## Supported / tested setup
 
 This integration was developed and tested with:
@@ -79,36 +93,7 @@ This repository is structured for use as a HACS custom repository:
 8. Search for **MOVA LumeGret Energy**.
 9. Sign in with the same MOVAhome account used by the official MOVAhome app.
 
-### Manual installation
-
-1. Create a Home Assistant backup.
-2. Copy `custom_components/mova_lumegret` from this repository to:
-
-```text
-/config/custom_components/mova_lumegret/
-```
-
-3. Restart Home Assistant.
-4. Add **MOVA LumeGret Energy** from **Settings -> Devices & services**.
-
-Expected structure:
-
-```text
-/config/custom_components/mova_lumegret/
-├── __init__.py
-├── api.py
-├── brand/
-│   ├── icon.png
-│   └── icon@2x.png
-├── config_flow.py
-├── const.py
-├── coordinator.py
-├── manifest.json
-├── sensor.py
-└── translations/
-    ├── en.json
-    └── nl.json
-```
+For screenshots, updating and manual installation, see [the detailed installation guide](docs/INSTALLATION.md).
 
 ## Optional: Home Assistant Energy Dashboard
 
@@ -121,13 +106,7 @@ sensor.mova_lumegret_a4000_batterij_laden
 sensor.mova_lumegret_a4000_batterij_ontladen
 ```
 
-If packages are enabled, copy the file to for example:
-
-```text
-/config/packages/mova_energy_dashboard.yaml
-```
-
-Restart Home Assistant and add the resulting cumulative battery-energy sensors under **Settings -> Dashboards -> Energy -> Battery storage**.
+See [Dashboard / Energy Dashboard](docs/DASHBOARD.md) for the full setup.
 
 ## Credentials and privacy
 
