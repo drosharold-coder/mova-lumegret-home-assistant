@@ -39,6 +39,17 @@ De koppeling gebruikt de MOVAhome EU-cloud en leest standaard ongeveer iedere 10
 
 Handmatig installeren kan ook door `custom_components/mova_lumegret` naar `/config/custom_components/mova_lumegret` te kopiëren.
 
+## Meerdere merken thuisaccu's in dezelfde Home Assistant-opstelling
+
+De MOVA kan ook onderdeel zijn van een Home Assistant-opstelling waarin een thuisaccu van een ander merk aanwezig is. Home Assistant kan de telemetrie van beide systemen naast elkaar gebruiken voor dashboards, historie en energiemanagement.
+
+Belangrijk: dit betekent niet dat MOVA officieel rechtstreeks met een specifiek ander merk koppelt. De samenwerking gebeurt op Home Assistant-/EMS-niveau. Deze publieke MOVA-integratie blijft bewust read-only.
+
+Als beide accusystemen daarnaast via betrouwbare schrijfbare integraties of fabrikant-API's aangestuurd kunnen worden, kan een aparte EMS-regellaag bepalen welke accu wanneer mag laden of ontladen. Dat voorkomt dat twee zelfstandige regelingen elkaar gaan tegenwerken.
+
+De uitgebreide uitleg, inclusief architectuurschema, conflictpreventie en testchecklist, staat hier:
+`docs/MULTI_BATTERY_NL.md`
+
 ## Extra documentatie
 
 De GitHub-repository bevat inmiddels ook:
@@ -47,6 +58,7 @@ De GitHub-repository bevat inmiddels ook:
 - ondersteunde apparaten/model-ID's;
 - troubleshooting en FAQ;
 - architectuuroverzicht;
+- uitleg voor multi-brand thuisaccu-opstellingen;
 - testmatrix/releasechecklist;
 - dashboard- en Energy Dashboard-uitleg;
 - roadmap en contribution guide;
