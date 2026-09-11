@@ -14,6 +14,22 @@ Onofficiële **read-only** Home Assistant custom integration voor de MOVA LumeGr
 
 De B4000 maakt deel uit van de geteste accusamenstelling, maar wordt door deze integratie niet als apart cloudapparaat aangeboden.
 
+## Home Assistant-weergave
+
+De voorbeelden hieronder zijn privacyveilige weergaven op basis van screenshots uit de echte testinstallatie. Privéadressen en niet-gerelateerde persoonlijke automatiseringen zijn bewust weggelaten.
+
+### Integratie-overzicht
+
+![MOVA LumeGret integratie-overzicht](docs/images/mova-integration-overview.svg)
+
+### MOVA LumeGret A4000
+
+![MOVA LumeGret A4000 in Home Assistant](docs/images/mova-a4000-home-assistant.svg)
+
+### MOVA Smart Meter P1
+
+![MOVA Smart Meter P1 in Home Assistant](docs/images/mova-p1-home-assistant.svg)
+
 ## Bewust read-only
 
 De publieke integratie leest alleen gegevens uit. Er zitten **geen** laad-, ontlaad-, modus- of andere schrijfcommando's in deze publieke versie.
@@ -96,6 +112,7 @@ De publieke repository bevat zelf geen persoonlijk wachtwoord, live access token
 - Getest met de hierboven genoemde EU-opstelling en model-ID's.
 - Deze versie verwacht zowel een A4000 als Smart Meter P1 in hetzelfde MOVAhome-account.
 - De gebruikte cloudinterface is niet officieel gedocumenteerd en kan wijzigen.
+- Lokale merfafbeeldingen van custom integrations vereisen een recente Home Assistant-versie. Zie je `icon not available`, werk dan eerst Home Assistant bij en installeer/update deze integratie opnieuw voordat je het artwork zelf gaat onderzoeken.
 
 ## Doel
 
@@ -103,6 +120,8 @@ Het doel is om MOVA-gebruikers nu al nette Home Assistant-telemetrie te geven, p
 
 ## Versie
 
-**MOVA LumeGret Energy v0.1.3**
+Huidige publieke release: **v0.1.3**
+
+Volgende release in voorbereiding: **v0.1.4**
 
 MIT-licentie. MOVA-namen en handelsmerken blijven eigendom van de betreffende rechthebbenden. Eventuele community-afbeeldingen in deze repository zijn geen officieel MOVA-logo.
