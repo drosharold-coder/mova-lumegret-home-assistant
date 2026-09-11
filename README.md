@@ -13,6 +13,8 @@ Unofficial **read-only** Home Assistant custom integration for the MOVA LumeGret
 - [FAQ](FAQ.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Dashboard / Energy Dashboard](docs/DASHBOARD.md)
+- [Multi-brand battery setups](docs/MULTI_BATTERY.md)
+- [Nederlandse uitleg: meerdere accumerken](docs/MULTI_BATTERY_NL.md)
 - [Test matrix & release checklist](docs/TEST_MATRIX.md)
 - [Roadmap](ROADMAP.md)
 - [Contributing](CONTRIBUTING.md)
@@ -107,6 +109,14 @@ sensor.mova_lumegret_a4000_batterij_ontladen
 ```
 
 See [Dashboard / Energy Dashboard](docs/DASHBOARD.md) for the full setup.
+
+## Multi-brand battery setups
+
+MOVA telemetry can be used in the same Home Assistant installation as telemetry from a home battery of another manufacturer. Home Assistant can then provide one common monitoring layer, and a separate EMS can coordinate multiple systems if reliable writable interfaces are available for the batteries involved.
+
+This is a Home Assistant / EMS architecture pattern, **not** a claim of official MOVA-to-third-party compatibility. This public MOVA integration remains read-only and does not coordinate charging or discharging itself.
+
+See [Multi-brand battery setups](docs/MULTI_BATTERY.md) for the architecture, conflict-avoidance rules and validation checklist.
 
 ## Credentials and privacy
 
