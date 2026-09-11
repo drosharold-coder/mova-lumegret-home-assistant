@@ -23,6 +23,7 @@ This roadmap describes the intended direction of the community integration. It i
 - Test additional MOVA energy-storage products when hardware/model IDs become available.
 - Support additional models only after real-device validation.
 - Improve energy statistics and Home Assistant Energy Dashboard integration.
+- Document and validate multi-brand Home Assistant battery setups without moving experimental write/control logic into this public integration.
 - Add translations from community contributions.
 
 ## Preferred long-term direction
