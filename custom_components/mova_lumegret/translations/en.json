@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect MOVA LumeGret",
+        "description": "This community integration is read-only. It does not send charging, discharging, or other control commands to the battery.",
+        "data": {
+          "email": "MOVAhome email address",
+          "password": "MOVAhome password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to MOVA.",
+      "invalid_auth": "The MOVAhome email address or password was not accepted.",
+      "devices_not_found": "The LumeGret A4000 and Smart Meter P1 were not both found on this account.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This MOVAhome account has already been added."
+    }
+  }
+}
