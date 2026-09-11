@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Troubleshooting guide
+    url: https://github.com/drosharold-coder/mova-lumegret-home-assistant/blob/main/TROUBLESHOOTING.md
+    about: Check common problems before opening a new issue.
+  - name: Supported devices
+    url: https://github.com/drosharold-coder/mova-lumegret-home-assistant/blob/main/SUPPORTED_DEVICES.md
+    about: See the hardware that has actually been verified.
