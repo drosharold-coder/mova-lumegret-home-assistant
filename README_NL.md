@@ -4,6 +4,20 @@ Onofficiële **read-only** Home Assistant custom integration voor de MOVA LumeGr
 
 > Dit is een communityproject. Het is geen officiële MOVA- of Home Assistant-integratie. Wijzigingen aan firmware of cloud kunnen ervoor zorgen dat de integratie aangepast moet worden.
 
+## Documentatie
+
+- [Nederlandse installatiehandleiding](docs/INSTALLATION_NL.md)
+- [Engelse installatiehandleiding](docs/INSTALLATION.md)
+- [Ondersteunde apparaten](SUPPORTED_DEVICES.md)
+- [Probleemoplossing](TROUBLESHOOTING.md)
+- [Veelgestelde vragen](FAQ.md)
+- [Architectuur](docs/ARCHITECTURE.md)
+- [Dashboard / Energy Dashboard](docs/DASHBOARD.md)
+- [Testmatrix en releasechecklist](docs/TEST_MATRIX.md)
+- [Roadmap](ROADMAP.md)
+- [Bijdragen](CONTRIBUTING.md)
+- [Beveiliging](SECURITY.md)
+
 ## Getest met
 
 - MOVA LumeGret A4000 (`mova.bkw.ge2505`)
@@ -65,8 +79,6 @@ De cloud wordt in deze versie iedere 10 seconden uitgelezen.
 
 ### Via HACS als custom repository
 
-Deze repository is ingericht om als HACS custom repository te gebruiken:
-
 1. Open HACS.
 2. Kies via het menu **Custom repositories**.
 3. Voeg `https://github.com/drosharold-coder/mova-lumegret-home-assistant` toe.
@@ -77,17 +89,7 @@ Deze repository is ingericht om als HACS custom repository te gebruiken:
 8. Zoek op **MOVA LumeGret Energy**.
 9. Log in met hetzelfde MOVAhome-account als in de officiële app.
 
-### Handmatig
-
-1. Maak eerst een Home Assistant-back-up.
-2. Kopieer `custom_components/mova_lumegret` naar:
-
-```text
-/config/custom_components/mova_lumegret/
-```
-
-3. Herstart Home Assistant.
-4. Voeg daarna **MOVA LumeGret Energy** toe bij **Instellingen -> Apparaten & diensten**.
+Voor handmatige installatie, updates en extra uitleg: [Nederlandse installatiehandleiding](docs/INSTALLATION_NL.md).
 
 ## Optioneel: Energy Dashboard
 
@@ -99,6 +101,8 @@ Controleer eerst of deze bronentiteiten bij jou bestaan:
 sensor.mova_lumegret_a4000_batterij_laden
 sensor.mova_lumegret_a4000_batterij_ontladen
 ```
+
+Zie [Dashboard / Energy Dashboard](docs/DASHBOARD.md) voor de volledige uitleg.
 
 ## Privacy en inloggegevens
 
