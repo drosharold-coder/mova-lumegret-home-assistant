@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#f7f7f7"/>
+  <g font-family="Arial,Helvetica,sans-serif" fill="#202124">
+    <rect x="20" y="20" width="365" height="180" rx="14" fill="#fff" stroke="#d8d8d8"/>
+    <text x="40" y="62" font-size="26">Device info</text>
+    <text x="40" y="108" font-size="17" fill="#666">LumeGret A4000</text>
+    <text x="40" y="136" font-size="17" fill="#666">by MOVA</text>
+    <text x="40" y="178" font-size="17">MOVA LumeGret Energy</text>
+
+    <rect x="405" y="20" width="385" height="455" rx="14" fill="#fff" stroke="#d8d8d8"/>
+    <text x="425" y="62" font-size="26">Sensors</text>
+    <g font-size="17">
+      <text x="445" y="112">Battery charging</text><text x="760" y="112" text-anchor="end">0 W</text>
+      <text x="445" y="162">Battery discharging</text><text x="760" y="162" text-anchor="end">276 W</text>
+      <text x="445" y="212">Battery SoC</text><text x="760" y="212" text-anchor="end">89.0%</text>
+      <text x="445" y="262">Battery direction</text><text x="760" y="262" text-anchor="end">Discharging</text>
+      <text x="445" y="312">Battery current</text><text x="760" y="312" text-anchor="end">4.90 A</text>
+      <text x="445" y="362">Battery power</text><text x="760" y="362" text-anchor="end">276 W</text>
+      <text x="445" y="412">Operating status</text><text x="760" y="412" text-anchor="end">Grid Tied</text>
+    </g>
+
+    <rect x="810" y="20" width="370" height="455" rx="14" fill="#fff" stroke="#d8d8d8"/>
+    <text x="830" y="62" font-size="26">Activity</text>
+    <text x="830" y="102" font-size="15" font-weight="bold">Today</text>
+    <g font-size="16">
+      <text x="850" y="145">Battery direction</text><text x="1150" y="145" text-anchor="end">Discharging</text>
+      <text x="850" y="205">Battery direction</text><text x="1150" y="205" text-anchor="end">Charging</text>
+      <text x="850" y="265">Battery direction</text><text x="1150" y="265" text-anchor="end">Idle</text>
+      <text x="850" y="325">Battery direction</text><text x="1150" y="325" text-anchor="end">Discharging</text>
+    </g>
+  </g>
+</svg>
