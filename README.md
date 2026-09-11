@@ -16,6 +16,22 @@ This integration was developed and tested with:
 
 The B4000 is part of the tested battery system, but it is not exposed as a separate cloud device by this integration.
 
+## Home Assistant preview
+
+The previews below are privacy-safe recreations based on screenshots from the real test installation. Personal addresses and unrelated private automations have deliberately been left out.
+
+### Integration overview
+
+![MOVA LumeGret integration overview](docs/images/mova-integration-overview.svg)
+
+### MOVA LumeGret A4000
+
+![MOVA LumeGret A4000 in Home Assistant](docs/images/mova-a4000-home-assistant.svg)
+
+### MOVA Smart Meter P1
+
+![MOVA Smart Meter P1 in Home Assistant](docs/images/mova-p1-home-assistant.svg)
+
 ## Safety first: read-only
 
 The public integration only reads telemetry. It does **not** include charging, discharging, mode-changing, or other battery-control writes.
@@ -126,6 +142,7 @@ The repository itself contains no personal account password, live access token, 
 - This release currently expects both an A4000 and Smart Meter P1 on the same MOVAhome account.
 - Cloud endpoints and property behavior are unofficial and may change.
 - The default 10-second polling interval is based on the tested installation; no official public MOVA cloud rate limit is documented here.
+- Local custom-integration brand images require a recent Home Assistant release. If Home Assistant shows `icon not available`, first update Home Assistant and reinstall/update this integration before troubleshooting the artwork itself.
 
 ## Why this project exists
 
@@ -134,6 +151,8 @@ The goal is to make MOVA battery telemetry usable in Home Assistant today, share
 ## Version
 
 Current public release: **v0.1.3**
+
+Next release in preparation: **v0.1.4**
 
 ## License
 
