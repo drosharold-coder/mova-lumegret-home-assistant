@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "MOVA LumeGret verbinden",
+        "description": "Deze community-integratie is read-only. Er worden geen laad-, ontlaad- of andere besturingscommando's naar de accu gestuurd.",
+        "data": {
+          "email": "MOVAhome e-mailadres",
+          "password": "MOVAhome wachtwoord"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met MOVA.",
+      "invalid_auth": "Het MOVAhome e-mailadres of wachtwoord is niet geaccepteerd.",
+      "devices_not_found": "De LumeGret A4000 en Smart Meter P1 zijn niet beide gevonden op dit account.",
+      "unknown": "Onverwachte fout."
+    },
+    "abort": {
+      "already_configured": "Dit MOVAhome-account is al toegevoegd."
+    }
+  }
+}
