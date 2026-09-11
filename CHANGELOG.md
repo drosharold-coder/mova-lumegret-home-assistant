@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.4 - in preparation
+
+- Added privacy-safe Home Assistant previews for the integration, A4000 and Smart Meter P1.
+- Added extra README guidance for custom-integration brand images.
+- Kept the public integration read-only.
+- No experimental battery write/control logic is included.
+
 ## v0.1.3 - 2026-09-11
 
 - Prepared the integration for public GitHub release.
