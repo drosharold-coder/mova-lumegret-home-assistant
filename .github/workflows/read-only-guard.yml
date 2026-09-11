@@ -1,0 +1,31 @@
+name: Read-only guard
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  read-only:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Verify Python syntax
+        run: python3 -m py_compile custom_components/mova_lumegret/*.py
+
+      - name: Block battery write methods from public integration
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RniE 'set_properties|"method"[[:space:]]*:[[:space:]]*"set_' custom_components/mova_lumegret; then
+            echo "Write-capable MOVA method detected. Public integration must remain read-only."
+            exit 1
+          fi
+          echo "Read-only guard passed."
