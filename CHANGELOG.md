@@ -3,6 +3,13 @@
 ## v0.1.4 - in preparation
 
 - Added privacy-safe Home Assistant previews for the integration, A4000 and Smart Meter P1.
+- Added detailed English and Dutch installation guides.
+- Added supported-device documentation, FAQ and troubleshooting guide.
+- Added architecture documentation with a visual Mermaid data-flow diagram.
+- Added dashboard / Energy Dashboard guidance.
+- Added a real-device test matrix and release checklist.
+- Added roadmap and contributing guidelines.
+- Added structured GitHub issue forms for bugs, feature requests and device-support requests.
 - Added extra README guidance for custom-integration brand images.
 - Kept the public integration read-only.
 - No experimental battery write/control logic is included.
