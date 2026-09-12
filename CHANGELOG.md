@@ -2,6 +2,9 @@
 
 ## v0.1.4 - in preparation
 
+- Added privacy-safe Home Assistant diagnostics with automatic redaction of credentials, tokens and device identifiers.
+- Added a controlled retry for temporary MOVA cloud connection failures.
+- Improved authentication retry handling and unexpected-error reporting in the update coordinator.
 - Added privacy-safe Home Assistant previews for the integration, A4000 and Smart Meter P1.
 - Added detailed English and Dutch installation guides.
 - Added supported-device documentation, FAQ and troubleshooting guide.
