@@ -1,8 +1,17 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/mova_lumegret/brand/dark_logo.png">
+    <img alt="MOVA" src="custom_components/mova_lumegret/brand/logo.png" width="460">
+  </picture>
+</p>
+
 # Home Assistant Community post
 
 ## MOVA LumeGret A4000 + Smart Meter P1 custom integration
 
 I have published an unofficial **read-only** Home Assistant custom integration for the MOVA LumeGret A4000 and MOVA Smart Meter P1.
+
+MOVA has granted permission to use the official MOVA/LumeGret logo for this community Home Assistant integration on GitHub and HACS. The integration itself remains unofficial and community-maintained.
 
 Tested setup:
 
