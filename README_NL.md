@@ -1,8 +1,17 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/mova_lumegret/brand/dark_logo.png">
+    <img alt="MOVA" src="custom_components/mova_lumegret/brand/logo.png" width="520">
+  </picture>
+</p>
+
 # MOVA LumeGret Energy voor Home Assistant
 
 Onofficiële **read-only** Home Assistant custom integration voor de MOVA LumeGret A4000 en MOVA Smart Meter P1 via de MOVAhome EU-cloud.
 
 > Dit is een communityproject. Het is geen officiële MOVA- of Home Assistant-integratie. Wijzigingen aan firmware of cloud kunnen ervoor zorgen dat de integratie aangepast moet worden.
+>
+> **Branding:** MOVA heeft toestemming gegeven om het officiële MOVA/LumeGret-logo te gebruiken voor deze community Home Assistant-integratie op GitHub en HACS. De integratie zelf blijft onofficieel en community-onderhouden.
 
 ## Documentatie
 
@@ -138,4 +147,6 @@ Huidige publieke release: **v0.1.3**
 
 Volgende release in voorbereiding: **v0.1.4**
 
-MIT-licentie. MOVA-namen en handelsmerken blijven eigendom van de betreffende rechthebbenden. Eventuele community-afbeeldingen in deze repository zijn geen officieel MOVA-logo.
+## Licentie en handelsmerken
+
+MIT-licentie. MOVA-namen, logo's en handelsmerken blijven eigendom van de betreffende rechthebbenden. Het officiële MOVA/LumeGret-logo wordt met toestemming gebruikt voor deze community Home Assistant-integratie op GitHub en HACS; die toestemming maakt de integratie niet tot een officieel MOVA-product.
