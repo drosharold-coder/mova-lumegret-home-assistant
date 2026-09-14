@@ -1,6 +1,15 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="custom_components/mova_lumegret/brand/dark_logo.png">
+    <img alt="MOVA" src="custom_components/mova_lumegret/brand/logo.png" width="460">
+  </picture>
+</p>
+
 # MOVA LumeGret A4000 + Smart Meter P1 werkend in Home Assistant
 
 Ik heb de MOVA LumeGret A4000, in mijn testopstelling samen met een B4000-uitbreiding, gekoppeld aan Home Assistant via een eigen community custom integration.
+
+MOVA heeft toestemming gegeven om het officiële MOVA/LumeGret-logo te gebruiken voor deze community Home Assistant-integratie op GitHub en HACS. De integratie zelf blijft onofficieel en community-onderhouden.
 
 GitHub:
 https://github.com/drosharold-coder/mova-lumegret-home-assistant
@@ -68,7 +77,7 @@ Er zit ook een optioneel YAML-package bij voor cumulatieve laad-/ontlaadenergie 
 
 ## Belangrijk
 
-Dit is een **onofficiële community-integratie** en geen officiële MOVA- of Home Assistant-koppeling. De cloudinterface kan wijzigen. De publieke GitHub-versie bevat bewust geen experimentele schrijf-/EMS-code en geen persoonlijke tokens of device-ID's.
+Dit is een **onofficiële community-integratie** en geen officiële MOVA- of Home Assistant-koppeling. Het officiële MOVA/LumeGret-logo wordt met toestemming gebruikt voor deze community-integratie. De cloudinterface kan wijzigen. De publieke GitHub-versie bevat bewust geen experimentele schrijf-/EMS-code en geen persoonlijke tokens of device-ID's.
 
 Ik hoor graag praktijkervaringen van andere A4000/P1-gebruikers. Voor andere MOVA-energiemodellen kan via GitHub een device-support issue worden geopend zonder privégegevens te delen.
 
