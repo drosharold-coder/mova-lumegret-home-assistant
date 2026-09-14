@@ -2,6 +2,10 @@
 
 ## v0.1.4 - in preparation
 
+- Replaced the temporary community placeholder artwork with the official MOVA/LumeGret branding supplied for this project.
+- Added Home Assistant local brand assets for light and dark themes: `icon.png`, `icon@2x.png`, `logo.png`, `logo@2x.png` and matching dark variants.
+- Added the official MOVA wordmark to the English and Dutch repository documentation.
+- Documented that MOVA granted permission to use the official logo for this community Home Assistant integration on GitHub and HACS; the integration itself remains unofficial and community-maintained.
 - Added privacy-safe Home Assistant previews for the integration, A4000 and Smart Meter P1.
 - Added detailed English and Dutch installation guides.
 - Added supported-device documentation, FAQ and troubleshooting guide.
