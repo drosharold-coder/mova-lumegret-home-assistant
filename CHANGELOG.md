@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.1.4 - in preparation
+## v0.1.4 - 2026-09-11
 
 - Replaced the temporary community placeholder artwork with the official MOVA/LumeGret branding supplied for this project.
 - Added Home Assistant local brand assets for light and dark themes: `icon.png`, `icon@2x.png`, `logo.png`, `logo@2x.png` and matching dark variants.
