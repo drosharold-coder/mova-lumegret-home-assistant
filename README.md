@@ -24,6 +24,8 @@ Unofficial **read-only** Home Assistant custom integration for the MOVA LumeGret
 - [Dashboard / Energy Dashboard](docs/DASHBOARD.md)
 - [Multi-brand battery setups](docs/MULTI_BATTERY.md)
 - [Nederlandse uitleg: meerdere accumerken](docs/MULTI_BATTERY_NL.md)
+- [Sanitized field-test notes](docs/FIELD_TEST_NOTES.md)
+- [EMS/controller publication status](docs/EMS_PUBLICATION_STATUS.md)
 - [Test matrix & release checklist](docs/TEST_MATRIX.md)
 - [Roadmap](ROADMAP.md)
 - [Contributing](CONTRIBUTING.md)
