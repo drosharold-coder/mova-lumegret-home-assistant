@@ -26,6 +26,8 @@ Unofficial **read-only** Home Assistant custom integration for the MOVA LumeGret
 - [Nederlandse uitleg: meerdere accumerken](docs/MULTI_BATTERY_NL.md)
 - [Sanitized field-test notes](docs/FIELD_TEST_NOTES.md)
 - [EMS/controller publication status](docs/EMS_PUBLICATION_STATUS.md)
+- [EMS public bundle plan](docs/EMS_PUBLIC_BUNDLE_PLAN.md)
+- [EMS public test report template](docs/EMS_TEST_REPORT_TEMPLATE.md)
 - [Test matrix & release checklist](docs/TEST_MATRIX.md)
 - [Roadmap](ROADMAP.md)
 - [Contributing](CONTRIBUTING.md)
