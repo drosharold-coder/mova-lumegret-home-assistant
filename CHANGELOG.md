@@ -3,24 +3,19 @@
 ## v0.1.4 - in preparation
 
 - Replaced the temporary community placeholder artwork with the official MOVA/LumeGret branding supplied for this project.
-- Added Home Assistant local brand assets for light and dark themes: `icon.png`, `icon@2x.png`, `logo.png`, `logo@2x.png` and matching dark variants.
-- Added the official MOVA wordmark to the English and Dutch repository documentation.
-- Documented that MOVA granted permission to use the official logo for this community Home Assistant integration on GitHub and HACS; the integration itself remains unofficial and community-maintained.
+- Added Home Assistant local brand assets for light and dark themes.
 - Added privacy-safe Home Assistant previews for the integration, A4000 and Smart Meter P1.
 - Added detailed English and Dutch installation guides.
 - Added supported-device documentation, FAQ and troubleshooting guide.
-- Added architecture documentation with a visual Mermaid data-flow diagram.
-- Added dashboard / Energy Dashboard guidance.
-- Added English and Dutch documentation for multi-brand home-battery setups through Home Assistant, including conflict-avoidance rules and a validation checklist.
-- Added sanitized high-level field-test notes for the multi-battery / EMS engineering work.
-- Added a public EMS/controller publication-status document that clearly separates the read-only integration from private experimental control code.
-- Added an EMS public-bundle plan with privacy, safety and release-gate requirements.
-- Added a reusable privacy-safe EMS practical-test report template.
-- Clarified that multi-brand coordination is a Home Assistant / EMS architecture pattern, not an official MOVA-to-third-party compatibility claim.
-- Added a real-device test matrix and release checklist.
-- Added roadmap and contributing guidelines.
-- Added structured GitHub issue forms for bugs, feature requests and device-support requests.
-- Added extra README guidance for custom-integration brand images.
+- Added architecture documentation and Energy Dashboard guidance.
+- Added English and Dutch multi-brand battery documentation with conflict-avoidance rules and validation checklist.
+- Updated the public EMS status to reflect the current real-world multi-battery project.
+- Documented the primary 19.52 kWh combined test environment and real failover/recovery findings.
+- Added an October 2026 current-project-status page.
+- Added second-site community validation planning for multiple A4000 units + B4000 in France.
+- Added tracking for community-requested A4000 PV1–PV4 and total PV telemetry.
+- Expanded the test matrix and roadmap for multi-site validation.
+- Added an EMS public-bundle plan and privacy-safe test-report template.
 - Kept the public integration read-only.
 - No experimental battery write/control logic is included.
 
