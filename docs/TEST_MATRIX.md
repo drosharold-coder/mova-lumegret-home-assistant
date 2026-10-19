@@ -1,6 +1,6 @@
 # Test matrix
 
-This file records what has actually been verified. A product should not be marked supported based only on a model name or specification sheet.
+This file records what has actually been verified. A product or sensor should not be marked supported based only on a model name, app screen or specification sheet.
 
 | Area | Hardware / function | Status | Notes |
 |---|---|---|---|
@@ -12,11 +12,17 @@ This file records what has actually been verified. A product should not be marke
 | Battery telemetry | Current/direction/status | ✅ Verified | Visible in Home Assistant. |
 | Grid telemetry | Net power | ✅ Verified | Positive import / negative export convention. |
 | Grid telemetry | Import/export split | ✅ Verified | Separate entities available. |
-| Home Assistant validation | Hassfest | ✅ Passing | GitHub Actions. |
-| HACS validation | HACS action | ✅ Passing | GitHub Actions. |
-| Public safety guard | Read-only check | ✅ Passing | Public integration must not contain `set_properties` write control. |
-| HACS clean update | v0.1.3 -> next release | ⏳ Pending | Run before publishing v0.1.4. |
-| Branding | Custom icon on current HA | ⏳ To verify | Official MOVA artwork only after explicit permission. |
+| Multi-brand architecture | MOVA + second battery platform under one HA EMS | ✅ Real-world validated | EMS layer is separate from this read-only integration. |
+| Failover concept | Continue with remaining battery after battery/network loss | ✅ Real-world observed | Recovery remains part of ongoing validation. |
+| External validation | Multiple A4000 units + B4000 in second household | 🧪 In preparation | Community test site in France; not yet marked supported. |
+| A4000 PV inputs | PV1–PV4 power | 🔎 Investigation requested | Tracked by community issue; not in v0.1.3. |
+| A4000 PV total | Total PV power / energy | 🔎 Investigation requested | Requires verified read-only properties first. |
+| Home Assistant validation | Hassfest | ✅ Previously passing | Re-check on the final next-release head. |
+| HACS validation | HACS action | ✅ Previously passing | Re-check on the final next-release head. |
+| Public safety guard | Read-only check | ✅ Guard present | Public integration must not contain battery-control writes. |
+| HACS clean update | v0.1.3 -> next release | ⏳ Pending | Required before publishing v0.1.4. |
+| Branding permission | Official MOVA/LumeGret assets | ✅ Confirmed for project | Integration remains unofficial/community-maintained. |
+| Branding display | Custom icon on current HA | ⏳ Practical verification | Re-check during HACS/update test. |
 
 ## Release checklist
 
@@ -28,12 +34,14 @@ Before a new public release:
 - [ ] Confirm A4000 entities update.
 - [ ] Confirm P1 import/export updates.
 - [ ] Check Home Assistant logs for unexpected errors.
-- [ ] Confirm no secrets/private identifiers were added.
+- [ ] Verify diagnostics do not expose credentials or private identifiers.
+- [ ] Confirm no secrets/private identifiers were added to the repository.
 - [ ] Confirm read-only guard passes.
 - [ ] Confirm HACS validation passes.
 - [ ] Confirm Hassfest passes.
 - [ ] Update `CHANGELOG.md`.
+- [ ] Update this test matrix for any newly verified sensors/devices.
 
 ## Community testing
 
-If you test another MOVA product, report the exact product/model and Home Assistant version, but sanitize all account/device identifiers before posting anything publicly.
+If you test another MOVA product or a second installation, report the exact product/model and Home Assistant version, but sanitize all account/device identifiers before posting anything publicly.
