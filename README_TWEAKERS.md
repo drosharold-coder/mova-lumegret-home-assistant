@@ -1,11 +1,4 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="custom_components/mova_lumegret/brand/dark_logo.png">
-    <img alt="MOVA" src="custom_components/mova_lumegret/brand/logo.png" width="460">
-  </picture>
-</p>
-
-# MOVA LumeGret A4000 + Smart Meter P1 werkend in Home Assistant
+# MOVA LumeGret A4000 + Smart Meter P1 in Home Assistant
 
 Ik heb de MOVA LumeGret A4000, in mijn testopstelling samen met een B4000-uitbreiding, gekoppeld aan Home Assistant via een eigen community custom integration.
 
@@ -14,7 +7,7 @@ MOVA heeft toestemming gegeven om het officiële MOVA/LumeGret-logo te gebruiken
 GitHub:
 https://github.com/drosharold-coder/mova-lumegret-home-assistant
 
-De versie die ik publiek deel is bewust **read-only**. Home Assistant leest de accu en de MOVA Smart Meter P1 uit, maar stuurt vanuit deze publieke integratie geen laad-, ontlaad- of andere besturingscommando's naar de batterij.
+De publieke integratie is bewust **read-only**. Home Assistant leest de accu en MOVA Smart Meter P1 uit, maar stuurt vanuit deze integratie geen laad-, ontlaad- of andere besturingscommando's naar de batterij.
 
 ## Wat wordt uitgelezen?
 
@@ -34,6 +27,30 @@ De versie die ik publiek deel is bewust **read-only**. Home Assistant leest de a
 
 De koppeling gebruikt de MOVAhome EU-cloud en leest standaard ongeveer iedere 10 seconden uit.
 
+## Project inmiddels breder dan alleen uitlezen
+
+Het project is inmiddels doorgegroeid naar een apart Home Assistant EMS waarin MOVA samen met een tweede batterijplatform in dagelijks gebruik wordt gecoördineerd.
+
+De primaire praktijktest gebruikt **19,52 kWh totale nominale opslagcapaciteit** en omvat onder andere:
+
+- zonne-overschot;
+- HOUSE / bijna-nul-netregeling;
+- SoC- en reservebeheer;
+- high-load gedrag;
+- failover en herstel;
+- prijsbewust laden;
+- multi-battery coördinatie.
+
+Belangrijk: deze EMS-regeling staat **los van de publieke read-only MOVA-integratie**.
+
+Een echte batterij-/netwerkuitval is inmiddels gebruikt om failover en herstel in de praktijk te testen.
+
+Daarnaast wordt een tweede community-testopstelling in Frankrijk voorbereid met meerdere A4000-units en B4000-uitbreiding. Daarmee kunnen we later gedrag op een tweede woning valideren.
+
+## Nieuwe community-vraag: PV1–PV4
+
+Er is inmiddels ook een feature request voor read-only PV1–PV4 ingangsvermogens en totaal PV-vermogen van de A4000. Dat zit nog niet in v0.1.3 en wordt pas toegevoegd nadat de juiste properties op echte hardware zijn gevalideerd.
+
 ## Installeren via HACS
 
 1. Open HACS.
@@ -46,41 +63,10 @@ De koppeling gebruikt de MOVAhome EU-cloud en leest standaard ongeveer iedere 10
 8. Zoek op **MOVA LumeGret Energy**.
 9. Log in met hetzelfde MOVAhome-account als in de officiële app.
 
-Handmatig installeren kan ook door `custom_components/mova_lumegret` naar `/config/custom_components/mova_lumegret` te kopiëren.
-
-## Meerdere merken thuisaccu's in dezelfde Home Assistant-opstelling
-
-De MOVA kan ook onderdeel zijn van een Home Assistant-opstelling waarin een thuisaccu van een ander merk aanwezig is. Home Assistant kan de telemetrie van beide systemen naast elkaar gebruiken voor dashboards, historie en energiemanagement.
-
-Belangrijk: dit betekent niet dat MOVA officieel rechtstreeks met een specifiek ander merk koppelt. De samenwerking gebeurt op Home Assistant-/EMS-niveau. Deze publieke MOVA-integratie blijft bewust read-only.
-
-Als beide accusystemen daarnaast via betrouwbare schrijfbare integraties of fabrikant-API's aangestuurd kunnen worden, kan een aparte EMS-regellaag bepalen welke accu wanneer mag laden of ontladen. Dat voorkomt dat twee zelfstandige regelingen elkaar gaan tegenwerken.
-
-De uitgebreide uitleg, inclusief architectuurschema, conflictpreventie en testchecklist, staat hier:
-`docs/MULTI_BATTERY_NL.md`
-
-## Extra documentatie
-
-De GitHub-repository bevat inmiddels ook:
-
-- Nederlandse en Engelse installatiehandleiding;
-- ondersteunde apparaten/model-ID's;
-- troubleshooting en FAQ;
-- architectuuroverzicht;
-- uitleg voor multi-brand thuisaccu-opstellingen;
-- testmatrix/releasechecklist;
-- dashboard- en Energy Dashboard-uitleg;
-- roadmap en contribution guide;
-- issue-templates voor bugs en ondersteuning van andere MOVA-modellen.
-
-Er zit ook een optioneel YAML-package bij voor cumulatieve laad-/ontlaadenergie in het Home Assistant Energy Dashboard.
-
 ## Belangrijk
 
-Dit is een **onofficiële community-integratie** en geen officiële MOVA- of Home Assistant-koppeling. Het officiële MOVA/LumeGret-logo wordt met toestemming gebruikt voor deze community-integratie. De cloudinterface kan wijzigen. De publieke GitHub-versie bevat bewust geen experimentele schrijf-/EMS-code en geen persoonlijke tokens of device-ID's.
-
-Ik hoor graag praktijkervaringen van andere A4000/P1-gebruikers. Voor andere MOVA-energiemodellen kan via GitHub een device-support issue worden geopend zonder privégegevens te delen.
+Dit is een **onofficiële community-integratie** en geen officiële MOVA- of Home Assistant-koppeling. De publieke GitHub-versie bevat bewust geen experimentele schrijf-/EMS-code en geen persoonlijke tokens, IP-adressen of device-ID's.
 
 Huidige publieke release: **v0.1.3**
 
-Volgende release in voorbereiding: **v0.1.4**
+Volgende release in voorbereiding: **v0.1.4**, pas na de praktische HACS/update-test.
