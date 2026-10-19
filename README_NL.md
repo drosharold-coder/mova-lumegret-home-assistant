@@ -15,6 +15,7 @@ Onofficiële **read-only** Home Assistant custom integration voor de MOVA LumeGr
 
 ## Documentatie
 
+- [Actuele projectstatus — oktober 2026](docs/CURRENT_PROJECT_STATUS.md)
 - [Nederlandse installatiehandleiding](docs/INSTALLATION_NL.md)
 - [Engelse installatiehandleiding](docs/INSTALLATION.md)
 - [Ondersteunde apparaten](SUPPORTED_DEVICES.md)
@@ -24,6 +25,8 @@ Onofficiële **read-only** Home Assistant custom integration voor de MOVA LumeGr
 - [Dashboard / Energy Dashboard](docs/DASHBOARD.md)
 - [Meerdere accumerken combineren](docs/MULTI_BATTERY_NL.md)
 - [Engelse multi-brand uitleg](docs/MULTI_BATTERY.md)
+- [Privacyveilige praktijktestnotities](docs/FIELD_TEST_NOTES.md)
+- [Status publieke EMS/controller](docs/EMS_PUBLICATION_STATUS.md)
 - [Testmatrix en releasechecklist](docs/TEST_MATRIX.md)
 - [Roadmap](ROADMAP.md)
 - [Bijdragen](CONTRIBUTING.md)
@@ -38,6 +41,8 @@ Onofficiële **read-only** Home Assistant custom integration voor de MOVA LumeGr
 - Home Assistant custom integrations
 
 De B4000 maakt deel uit van de geteste accusamenstelling, maar wordt door deze integratie niet als apart cloudapparaat aangeboden.
+
+Een tweede community-testopstelling in Frankrijk met meerdere A4000-units en B4000-uitbreiding wordt voorbereid. Die wordt pas als ondersteund aangemerkt na praktische validatie.
 
 ## Home Assistant-weergave
 
@@ -119,9 +124,15 @@ Zie [Dashboard / Energy Dashboard](docs/DASHBOARD.md) voor de volledige uitleg.
 
 MOVA-telemetrie kan in dezelfde Home Assistant-installatie worden gebruikt als gegevens van een thuisaccu van een ander merk. Home Assistant kan zo één gezamenlijke monitoringlaag vormen. Als voor beide systemen betrouwbare schrijfbare interfaces beschikbaar zijn, kan een aparte EMS-regellaag de accu's coördineren.
 
+De bredere praktijktest heeft deze architectuur inmiddels in dagelijks gebruik gevalideerd met **19,52 kWh totale nominale opslagcapaciteit** verdeeld over MOVA en een tweede batterijplatform, inclusief een echte failover-/herstelsituatie.
+
 Dit is een **Home Assistant-/EMS-architectuur**, geen bewering dat MOVA officieel een specifiek ander merk ondersteunt. De publieke MOVA-integratie blijft read-only en stuurt zelf geen laden of ontladen aan.
 
-Zie [Meerdere merken thuisaccu's combineren met Home Assistant](docs/MULTI_BATTERY_NL.md) voor het schema, regels om regelconflicten te voorkomen en de testchecklist.
+Zie [Meerdere merken thuisaccu's combineren met Home Assistant](docs/MULTI_BATTERY_NL.md) en [de actuele projectstatus](docs/CURRENT_PROJECT_STATUS.md).
+
+## Nieuwe community-vragen
+
+Er is inmiddels ook een community-verzoek voor read-only A4000 PV1–PV4 ingangsvermogens en totaal PV-vermogen voor Home Assistant/Energy Dashboard. Deze sensoren zitten **nog niet in v0.1.3** en worden pas toegevoegd nadat de juiste properties op echte hardware zijn gevalideerd.
 
 ## Privacy en inloggegevens
 
