@@ -1,10 +1,3 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="custom_components/mova_lumegret/brand/dark_logo.png">
-    <img alt="MOVA" src="custom_components/mova_lumegret/brand/logo.png" width="460">
-  </picture>
-</p>
-
 # Home Assistant Community post
 
 ## MOVA LumeGret A4000 + Smart Meter P1 custom integration
@@ -13,7 +6,7 @@ I have published an unofficial **read-only** Home Assistant custom integration f
 
 MOVA has granted permission to use the official MOVA/LumeGret logo for this community Home Assistant integration on GitHub and HACS. The integration itself remains unofficial and community-maintained.
 
-Tested setup:
+Tested public-integration setup:
 
 - MOVA LumeGret A4000 (`mova.bkw.ge2505`)
 - B4000 battery expansion in the test installation
@@ -24,13 +17,17 @@ The integration exposes battery SoC, battery power, charging/discharging power, 
 
 The public integration is deliberately read-only. It does not contain battery charge/discharge commands, mode changes or experimental write/EMS control logic.
 
-The current implementation uses MOVAhome cloud polling and is not an official MOVA integration. Cloud or firmware changes may require updates.
+The wider project has now also validated a **vendor-independent multi-battery Home Assistant EMS architecture** in real daily use, with 19.52 kWh combined nominal storage across MOVA and a second battery platform. That EMS/control work is separate from this repository's read-only integration.
+
+A second community validation site in France with multiple A4000 units and B4000 expansion is being prepared. It will not be marked supported until practical testing is complete.
+
+Community feedback is also tracking future read-only PV1–PV4 and total PV-power sensors for the A4000.
 
 GitHub repository:
 https://github.com/drosharold-coder/mova-lumegret-home-assistant
 
 Current public release: **v0.1.3**
 
-Installation is possible through HACS as a custom repository or manually by copying `custom_components/mova_lumegret` into Home Assistant. The repository also contains English/Dutch documentation, privacy-safe Home Assistant previews, troubleshooting, supported-device information, test matrix, roadmap and an optional Energy Dashboard package.
+The next release remains in preparation until the practical HACS/update validation has been completed.
 
-Feedback and additional MOVA model testing are very welcome through GitHub Issues. Please do not post passwords, tokens, addresses, private device IDs or Home Assistant `.storage` contents.
+Feedback and additional MOVA model testing are welcome through GitHub Issues. Please do not post passwords, tokens, addresses, private device IDs or Home Assistant `.storage` contents.
