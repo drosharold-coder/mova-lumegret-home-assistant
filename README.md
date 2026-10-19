@@ -15,6 +15,7 @@ Unofficial **read-only** Home Assistant custom integration for the MOVA LumeGret
 
 ## Documentation
 
+- [Current project status — October 2026](docs/CURRENT_PROJECT_STATUS.md)
 - [Detailed installation guide](docs/INSTALLATION.md)
 - [Nederlandse installatiehandleiding](docs/INSTALLATION_NL.md)
 - [Supported devices](SUPPORTED_DEVICES.md)
@@ -44,6 +45,8 @@ This integration was developed and tested with:
 - Home Assistant custom integrations
 
 The B4000 is part of the tested battery system, but it is not exposed as a separate cloud device by this integration.
+
+A second community validation setup in France with multiple A4000 units and B4000 expansion is being prepared. It is not yet marked as supported until practical validation is complete.
 
 ## Home Assistant preview
 
@@ -127,9 +130,15 @@ See [Dashboard / Energy Dashboard](docs/DASHBOARD.md) for the full setup.
 
 MOVA telemetry can be used in the same Home Assistant installation as telemetry from a home battery of another manufacturer. Home Assistant can then provide one common monitoring layer, and a separate EMS can coordinate multiple systems if reliable writable interfaces are available for the batteries involved.
 
+The wider project has now validated this architecture in real daily operation with **19.52 kWh combined nominal storage** across MOVA and a second battery platform, including practical failover/recovery testing.
+
 This is a Home Assistant / EMS architecture pattern, **not** a claim of official MOVA-to-third-party compatibility. This public MOVA integration remains read-only and does not coordinate charging or discharging itself.
 
-See [Multi-brand battery setups](docs/MULTI_BATTERY.md) for the architecture, conflict-avoidance rules and validation checklist.
+See [Multi-brand battery setups](docs/MULTI_BATTERY.md) and [current project status](docs/CURRENT_PROJECT_STATUS.md).
+
+## Current community requests
+
+Community feedback is now also tracking read-only A4000 PV1–PV4 input-power sensors and total PV power for future Home Assistant/Energy Dashboard use. These are **not yet part of v0.1.3** and will only be added after the relevant properties are verified on real hardware.
 
 ## Credentials and privacy
 
